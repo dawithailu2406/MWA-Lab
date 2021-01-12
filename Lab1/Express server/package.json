@@ -1,0 +1,20 @@
+{
+  "name": "app10",
+  "version": "1.0.0",
+  "description": "This is my first express project",
+  "main": "app10.js",
+  "scripts": {
+    "start": "node app10.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "and",
+    "express"
+  ],
+  "author": "Dawit Hailu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
