@@ -6,4 +6,4 @@ app.use("/lab2",routes);
 const server=app.listen(app.get("port"),function(){
     const port=server.address().port;
     console.log("Listening to port "+port);
-})
+});
