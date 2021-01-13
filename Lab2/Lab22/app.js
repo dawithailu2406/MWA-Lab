@@ -1,7 +1,7 @@
 var express=require("express");
-var routes= require("./api/routes");
+var routes= require("./api/route");
 var app=express();
-app.set("port",8000);
+app.set("port",5000);
 app.use("/",routes);
 var server=app.listen(app.get("port"),function(){
     var port=server.address().port;
