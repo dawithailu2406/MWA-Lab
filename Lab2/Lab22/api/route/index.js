@@ -1,5 +1,5 @@
-var express= require("express");
-var router= express.Router();
-var controllerSum =require("../controllers/sum.controllers.js");
-router.route("/add/:number/sum").get(controllerSum.sumNumber);
+const express= require("express");
+const router= express.Router();
+const Sum =require("../controllers/controllerOfSum.js");
+router.route("/:num1/add").get(Sum.sumNumber);
 module.exports=router;

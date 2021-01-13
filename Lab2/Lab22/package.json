@@ -10,13 +10,8 @@
   "keywords": [
     "sum",
     "of",
-    "numbers",
-    "using",
-    "jquery",
-    "string",
-    "and",
-    "param"
-  ],
+    "numbers"
+],
   "author": "Dawit Hailu",
   "license": "ISC",
   "dependencies": {
