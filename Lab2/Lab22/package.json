@@ -1,0 +1,25 @@
+{
+  "name": "lab22",
+  "version": "1.0.0",
+  "description": "Sum of numbers",
+  "main": "app.js",
+  "scripts": {
+    "start":"node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sum",
+    "of",
+    "numbers",
+    "using",
+    "jquery",
+    "string",
+    "and",
+    "param"
+  ],
+  "author": "Dawit Hailu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
