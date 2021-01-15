@@ -9,9 +9,7 @@ module.exports.studentsGetAll = function (req, res) {
   if (req.query && req.query.count) {
     count = parseInt(req.query.count, 10);
   }
-  if (count > 7) {
-    count = 7;
-  }
+  
   if (isNaN(offset) || isNaN(count)) {
     res
       .status(400)
@@ -23,15 +21,15 @@ module.exports.studentsGetAll = function (req, res) {
     .skip(offset)
     .limit(count)
     .exec(function (err, students) {
-      if (err) {
-        console.log("Found students", students.length);
+      if (err) { 
         res.status(500).json(err);
       } else {
-        console.log("Found games", students.length);
         res.json(students);
       }
     });
 };
+
+
 module.exports.studentGetOne = function (req, res) {
   var studentId = req.params.studentId;
 

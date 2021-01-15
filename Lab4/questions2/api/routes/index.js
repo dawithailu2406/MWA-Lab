@@ -1,16 +1,17 @@
-var express = require("express");
-var router = express.Router();
+var express= require("express");
 
-//var controllerGames = require("../controllers/games-controllers");
-var studentController = require("../controllers/student-controllers");
+var router= express.Router();
 
-//var controllerPublishers = require("../controllers/publisher-controllers");
-// router.route("/games").get(controllerGames.gamesGetAll);
-router.route("/students").get(studentController.gamesGetAll);
+var studentController =require("../controllers/students-controller.js");
 
-// router.route("/games/:gameId").get(controllerGames.gamesGetOne);
-router.route("/students/:gameId").get(studentController.gamesGetOne);
+var addressController=require("../controllers/address-controller.js");
 
-//router.route("/games/:gameId/publishers").get(controllerPublishers.publisherGetOne);
+router.route("/students").get(studentController.studentsGetAll);
 
-module.exports = router;
+router.route("/students/:studentId").get(studentController.studentGetOne);
+
+router.route("/students/:studentId/addresses").get(addressController.addressGetAll);
+
+router.route("/students/:studentId/addresses/:addressId").get(addressController.addressGetOne);
+
+module.exports=router;

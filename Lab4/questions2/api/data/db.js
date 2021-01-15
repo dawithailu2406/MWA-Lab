@@ -1,6 +1,6 @@
 
 var mongoose = require("mongoose");
-require("./games-model.js");
+require("./students-model.js");
 
 const dbName = "SchoolDB";
 
