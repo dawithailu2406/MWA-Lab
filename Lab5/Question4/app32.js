@@ -2,6 +2,7 @@ var express = require("express");
 require("./api/data/db");
 
 var routes = require("./api/routes");
+
 const bodyParser = require("body-parser");
 
 var app = express();
@@ -14,9 +15,9 @@ app.use(function (req, res, next) {
 });
 
 
-
 //app.use(express.static(path.join(__dirname,"public")));
 app.use(bodyParser.urlencoded({ extended: false }));
+
 app.use("/api", routes);
 
 const server = app.listen(app.get("port"), function () {

@@ -8,7 +8,6 @@ const dbURL = "mongodb://localhost:27017/" + dbName;
 mongoose.connect(dbURL);
 
 
-
 mongoose.connection.on("disconnected", function () {
     console.log("Mongoose disconnected");
 });
