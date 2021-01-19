@@ -1,0 +1,15 @@
+
+<h1>List of Countries</h1>
+<ul>
+    <li ng-repeat="country in jokeCtrl.countrys">
+        <strong><i>Country: </i></strong>{{country.name.common}}<BR />
+        Country Details: 
+        <input type="checkbox" ng-model="showPuchline" />
+        <div ng-show="showPuchline">
+            <strong>Capital City: </strong>{{country.capital}} <br/>
+            <strong>Country's Region: </strong>{{country.region}}<br/>
+            <strong>Official: </strong>{{country.name.official}}
+        </div>
+        <hr>
+    </li>
+</ul>
