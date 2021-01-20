@@ -1,0 +1,8 @@
+
+    <h1>{{vm.companyName}}</h1>
+
+    <ul>
+        <li ng-repeat="seller in vm.sellers">
+            <a ng-href="#!/seller/{{seller._id}}">{{seller.companyName}}</a>
+        </li>
+    </ul>

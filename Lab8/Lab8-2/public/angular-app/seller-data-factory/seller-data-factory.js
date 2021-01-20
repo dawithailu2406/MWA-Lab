@@ -1,17 +1,17 @@
-angular.module("meanGames").factory("GameDataFactory", GameDataFactory);
+angular.module("carSeller").factory("SellerDataFactory", SellerDataFactory);
 
-function GameDataFactory($http) {
+function SellerDataFactory($http) {
     return {
-        getAllGames: getAllGames,
-        getOneGame: getOneGame
+        getAllSellers: getAllSellers,
+        getOneSeller: getOneSeller
     };
 
-    function getAllGames() {
+    function getAllSellers() {
         return $http.get("/api/seller").
             then(complete).catch(failed);
     }
 
-    function getOneGame(id) {
+    function getOneSeller(id) {
         return $http.get("/api/seller/" + id).
             then(complete).catch(failed);
     }

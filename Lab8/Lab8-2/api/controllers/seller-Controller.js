@@ -3,15 +3,15 @@ var Seller = mongoose.model("Cars");
 
 module.exports.sellersGetAll = function (req, res) {
   var offset = 0;
-  var count = 9; 
+  var count = 7; 
   if (req.query && req.query.offset) {
     offset = parseInt(req.query.offset, 10);
   }
   if (req.query && req.query.count) {
     count = parseInt(req.query.count, 10);
   }
-  if (count > 11) {
-    count = 9;
+  if (count > 7) {
+    count = 7;
   }
   if (isNaN(offset) || isNaN(count)) {
     res.status(400).json({ message: "QueryString Offset and Count shoulb be numbers" });
