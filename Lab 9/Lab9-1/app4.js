@@ -1,14 +1,17 @@
 require("./api/data/db");
-
+const bodyParser=require("body-parser");
 var express=require("express");
 
 var path=require("path");
 var routes=require("./api/routes");
-const bodyParser=require("body-parser");
+
+//const _ = require("angular-route");
 
 var app=express();
-app.use(bodyParser.urlencoded({extended:false}));
-app.set("port",8080);
+
+app.set("port",5000);
+
+
 
 app.use(function(req,res,next){
     console.log(req.method, req.url);
@@ -16,10 +19,15 @@ app.use(function(req,res,next){
 });
 
 app.use(express.static(path.join(__dirname,"public")));
+
+
+//app.use(express.static(path.join(__dirname,"public")));
+//app.use(express.static(path.join(__dirname,"public")));
 app.use("/node_modules",express.static(path.join(__dirname,"node_modules")))
 
 
-
+app.use(bodyParser.urlencoded({extended:false}));
+app.use(bodyParser.json());
 app.use("/api",routes);
 
 const server =app.listen(app.get("port"),function(){
@@ -27,3 +35,6 @@ const server =app.listen(app.get("port"),function(){
     console.log("Listnening to port" + port);
 
 })
+
+
+

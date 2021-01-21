@@ -1,0 +1,18 @@
+<h1>{{vm.companyName}}</h1>
+
+<ul>
+    <li ng-repeat="seller in vm.sellers">
+        <a ng-href="#!/seller/{{seller._id}}">{{seller.companyName}}</a>
+
+        <a ng-href="#!/delete/seller/{{seller._id}}" class="btn-danger"> Delete</a> 
+    
+    </li>
+</ul>
+
+<form name="vm.SellerForm" ng-submit="vm.postOneSeller()">
+    To add a new Seller please fill in all the fields below:<BR />
+    companyName: <input type="text" name="title" required ng-model="vm.newSellerCompanyName" style="color:black" /><BR />
+    Address: <input type="text" name="price" required ng-model="vm.newSellerAddress" style="color:black" /><BR />
+    
+    <button type="submit" class="btn-success">Add Seller</button><BR />
+</form>

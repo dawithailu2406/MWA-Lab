@@ -1,0 +1,27 @@
+{
+  "name": "app4",
+  "version": "1.0.0",
+  "description": "This is mean stack with mongoose",
+  "main": "app4.js",
+  "scripts": {
+    "start": "nodemon app4.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mean",
+    "with",
+    "mongoose"
+  ],
+  "author": "Dawit Hailu",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.8.2",
+    "angular-route": "^1.8.2",
+    "body-parser": "^1.19.0",
+    "db": "^3.3.1",
+    "express": "^4.17.1",
+    "mongo": "^0.1.0",
+    "mongoose": "^5.11.12",
+    "nodemon": "^2.0.7"
+  }
+}
