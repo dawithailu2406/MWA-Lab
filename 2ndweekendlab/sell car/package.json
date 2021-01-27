@@ -1,0 +1,30 @@
+{
+  "name": "app12",
+  "version": "1.0.0",
+  "description": "This is mean stack with mongoose",
+  "main": "app12.js",
+  "scripts": {
+    "start": "nodemon app12.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mean",
+    "with",
+    "mongoose"
+  ],
+  "author": "Dawit Hailu",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.8.2",
+    "angular-jwt": "^0.1.11",
+    "angular-route": "^1.8.2",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.19.0",
+    "db": "^3.3.1",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.6.3",
+    "mongoose": "^5.11.12",
+    "nodemon": "^2.0.7"
+  }
+}

@@ -1,0 +1,16 @@
+<H1>Information about SellerCompany: 
+
+    <div ng-repeat="seller in vm.seller">
+    <p>{{seller.companyName}}
+        
+    </p></H1>
+    <P>
+  
+    Company Name   : {{seller.companyName |uppercase}}<BR/>
+    Car Type  : {{seller.car.name}}<BR/>
+    Car Origine : {{seller.car.origine}}</BR>
+    Mileage : {{seller.car.Mileage | currency}}<BR/>
+    Price: {{seller.car.price | currency}}<BR/>
+    Model :{{seller.car.model}}
+    </P>
+</div>
